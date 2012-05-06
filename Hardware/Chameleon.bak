@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/6/2012 3:30:06 PM
+EESchema Schematic File Version 2  date 5/6/2012 3:40:52 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -48,7 +48,7 @@ $EndDescr
 Text Notes 9450 1100 0    60   ~ 0
 Capacitive Sensor
 $Bitmap
-Pos 1350 7250
+Pos 1350 7200
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 EB 00 00 01 5D 08 06 00 00 00 23 60 45 
