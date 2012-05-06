@@ -1,5 +1,5 @@
 # Chameleon #
-#### A colorful RBG LED drink coaster with capacitive sensing  ####
+#### A colorful RBG LED drink coaster with capacitive sensing ####
 
 ---
 
