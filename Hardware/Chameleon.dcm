@@ -1,3 +1,7 @@
-EESchema-DOCLIB  Version 2.0  Date: 5/6/2012 2:50:36 PM
+EESchema-DOCLIB  Version 2.0  Date: 5/7/2012 2:29:10 PM
+#
+$CMP PCA9635
+D 16-bit Fm+ I2C-bus LED driver
+$ENDCMP
 #
 #End Doc Library
