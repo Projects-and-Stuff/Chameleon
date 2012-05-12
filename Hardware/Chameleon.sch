@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/7/2012 4:34:33 PM
+EESchema Schematic File Version 2  date 5/12/2012 11:31:01 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "Chameleon drink coasters"
-Date "7 may 2012"
+Date "12 may 2012"
 Rev "1.0"
 Comp "Projects and Stuff LLC"
 Comment1 ""
@@ -1034,7 +1034,7 @@ L INDUCTOR L?
 U 1 1 4FA81767
 P 750 1050
 F 0 "L?" V 700 1050 40  0000 C CNN
-F 1 "INDUCTOR" V 850 1050 40  0000 C CNN
+F 1 "33uH" V 850 1050 40  0000 C CNN
 	1    750  1050
 	1    0    0    -1  
 $EndComp
@@ -1476,7 +1476,7 @@ DA 75 EC 6A CB FA 00 00 98 83 56 94 E6 19 38 EA C1 56 AE 6A 0F 00 60 29 48 F0 66
 7B B9 BD 6B 01 00 F0 3F 68 45 11 2B 2C 7C CC 8C 27 DE E4 CF 25 0F 00 60 2F 98 D9 8A EB 5A 7C 74 
 6E 56 52 49 51 4E 59 71 7E 65 C5 4D 0F AF 00 BF F6 21 9D BA 45 88 9C 00 16 00 C0 66 90 E0 00 00 
 AC 42 3B 38 00 00 AB 90 E0 00 00 AC 42 82 03 00 B0 EA FF 00 E3 76 B5 A7 81 B6 BC 08 00 00 00 00 
-49 45 4E 44 AE 42 60 82 11 $EndBitmap
+49 45 4E 44 AE 42 60 82 83 $EndBitmap
 EndData
 $EndBitmap
 Text Notes 4550 950  0    60   ~ 0
@@ -1710,17 +1710,8 @@ L BATTERY BT?
 U 1 1 4FA6C819
 P 8300 1350
 F 0 "BT?" H 8300 1550 50  0000 C CNN
-F 1 "4.2V 500mAh" H 8300 1160 50  0000 C CNN
+F 1 "3.7V 500mAh" H 8300 1160 50  0000 C CNN
 	1    8300 1350
 	0    -1   -1   0   
-$EndComp
-$Comp
-L SPX29150T-L-5-0/TR U?
-U 1 1 4FA6C810
-P 9700 1000
-F 0 "U?" H 10000 600 60  0000 C CNN
-F 1 "SPX29150T-L-5-0/TR" H 9700 1150 60  0000 C CNN
-	1    9700 1000
-	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
