@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: 5/12/2012 6:37:29 PM
+EESchema-LIBRARY Version 2.3  Date: 5/12/2012 11:56:43 PM
 #encoding utf-8
 #
 # AS1107
@@ -44,8 +44,8 @@ F1 "CapSensor" 110 -10 40 V V C CNN
 DRAW
 C 0 0 20 0 1 8 N
 C 0 0 70 0 1 12 N
-X X X -150 0 80 R 40 40 1 1 P
-X Y Y 0 -150 130 U 40 40 1 1 P
+X X 1 -150 0 80 R 40 40 1 1 P
+X Y 2 0 -150 130 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
