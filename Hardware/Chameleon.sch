@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/12/2012 9:01:35 PM
+EESchema Schematic File Version 2  date 5/13/2012 2:38:40 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -577,9 +577,6 @@ Wire Wire Line
 	3500 2700 3500 2750
 Wire Wire Line
 	8550 1750 8550 1850
-Wire Wire Line
-	9300 3700 9300 3750
-Connection ~ 9300 3750
 Wire Notes Line
 	11100 900  4450 900 
 Wire Wire Line
@@ -590,15 +587,6 @@ Text Label 2900 1500 0    60   ~ 0
 AIN0
 Text Notes 5750 1000 0    60   ~ 0
 ISP Header
-$Comp
-L TST TP3
-U 1 1 4FAEFE3F
-P 9300 3700
-F 0 "TP3" H 9300 4000 40  0000 C CNN
-F 1 "TST" H 9300 3950 30  0000 C CNN
-	1    9300 3700
-	1    0    0    -1  
-$EndComp
 $Comp
 L TST TP1
 U 1 1 4FAEFE1B
@@ -1579,7 +1567,7 @@ DA 75 EC 6A CB FA 00 00 98 83 56 94 E6 19 38 EA C1 56 AE 6A 0F 00 60 29 48 F0 66
 7B B9 BD 6B 01 00 F0 3F 68 45 11 2B 2C 7C CC 8C 27 DE E4 CF 25 0F 00 60 2F 98 D9 8A EB 5A 7C 74 
 6E 56 52 49 51 4E 59 71 7E 65 C5 4D 0F AF 00 BF F6 21 9D BA 45 88 9C 00 16 00 C0 66 90 E0 00 00 
 AC 42 3B 38 00 00 AB 90 E0 00 00 AC 42 82 03 00 B0 EA FF 00 E3 76 B5 A7 81 B6 BC 08 00 00 00 00 
-49 45 4E 44 AE 42 60 82 B1 $EndBitmap
+49 45 4E 44 AE 42 60 82 C3 $EndBitmap
 EndData
 $EndBitmap
 Text Notes 4450 1000 0    60   ~ 0

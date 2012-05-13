@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: 5/12/2012 9:01:35 PM
+EESchema-LIBRARY Version 2.3  Date: 5/13/2012 2:38:40 AM
 #encoding utf-8
 #
 # ATTINY44-SS
@@ -52,8 +52,8 @@ F1 "CapSensor" 110 -10 40 V V C CNN
 DRAW
 C 0 0 20 0 1 8 N
 C 0 0 70 0 1 12 N
-X X X -150 0 80 R 40 40 1 1 P
-X Y Y 0 -150 130 U 40 40 1 1 P
+X X 1 -150 0 80 R 40 40 1 1 P
+X Y 2 0 -150 130 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #

@@ -1,115 +1,115 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 5/13/2012 12:21:35 AM
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 5/13/2012 2:22:34 AM
 
 BeginCmp
 TimeStamp = /4FA6C819;
 Reference = BT1;
 ValeurCmp = 3.7V_500mAh;
-IdModule  = ;
+IdModule  = Battery;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA8175A;
 Reference = C1;
 ValeurCmp = .1uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA82463;
 Reference = C2;
 ValeurCmp = .1uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA826DC;
 Reference = C3;
 ValeurCmp = .1uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA825D0;
 Reference = C4;
 ValeurCmp = 8pF;
-IdModule  = ;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA825DA;
 Reference = C5;
 ValeurCmp = 8pF;
-IdModule  = ;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA6CB17;
 Reference = C6;
 ValeurCmp = .1uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81831;
 Reference = C7;
 ValeurCmp = .1uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA8183C;
 Reference = C8;
 ValeurCmp = .1uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA6C82E;
 Reference = C9;
 ValeurCmp = 10uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81839;
 Reference = C10;
 ValeurCmp = .1uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81840;
 Reference = C11;
 ValeurCmp = .1uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA6C832;
 Reference = C12;
 ValeurCmp = 47uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81D59;
 Reference = C13;
 ValeurCmp = .1uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA6CF9E;
 Reference = CS0;
 ValeurCmp = 4.7nF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA82A80;
 Reference = CS1;
 ValeurCmp = 10uF;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
@@ -123,7 +123,7 @@ BeginCmp
 TimeStamp = /4FA81D43;
 Reference = D2;
 ValeurCmp = LED;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
@@ -137,14 +137,14 @@ BeginCmp
 TimeStamp = /4FA81767;
 Reference = L1;
 ValeurCmp = 33uH;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FAEB118;
 Reference = L2;
 ValeurCmp = 33uH;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
@@ -193,203 +193,203 @@ BeginCmp
 TimeStamp = /4FA82E61;
 Reference = R1;
 ValeurCmp = 10k;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA82E5A;
 Reference = R2;
 ValeurCmp = 10k;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA82E27;
 Reference = R3;
 ValeurCmp = 10k;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA83074;
 Reference = R4;
 ValeurCmp = 10k;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA8162D;
 Reference = R5;
 ValeurCmp = 10k;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C10;
 Reference = R6;
 ValeurCmp = 220;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C0D;
 Reference = R7;
 ValeurCmp = 220;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BC4;
 Reference = R8;
 ValeurCmp = 220;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BD4;
 Reference = R9;
 ValeurCmp = 220;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C14;
 Reference = R10;
 ValeurCmp = 220;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81D6C;
 Reference = R11;
 ValeurCmp = 220;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C0F;
 Reference = R12;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C0C;
 Reference = R13;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BCC;
 Reference = R14;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BD8;
 Reference = R15;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C13;
 Reference = R16;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C0E;
 Reference = R17;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C0B;
 Reference = R18;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BD0;
 Reference = R19;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BE3;
 Reference = R20;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C12;
 Reference = R21;
 ValeurCmp = 150;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA6CF48;
 Reference = RX0;
 ValeurCmp = 1k;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA6CF6C;
 Reference = RY0;
 ValeurCmp = 1k;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA6CFA2;
 Reference = RYB0;
 ValeurCmp = 470k;
-IdModule  = ;
+IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FAEE6F0;
 Reference = S1;
 ValeurCmp = TL3315NF160Q;
-IdModule  = ;
+IdModule  = TL3315NF160Q;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA6C954;
 Reference = S2;
 ValeurCmp = TL3315NF160Q;
-IdModule  = ;
+IdModule  = TL3315NF160Q;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FAEFE1B;
 Reference = TP1;
 ValeurCmp = TST;
-IdModule  = ;
+IdModule  = 1pin;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FAEFDCA;
 Reference = TP2;
 ValeurCmp = TST;
-IdModule  = ;
+IdModule  = 1pin;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FAEFE3F;
 Reference = TP3;
 ValeurCmp = TST;
-IdModule  = ;
+IdModule  = 1pin;
 EndCmp
 
 BeginCmp
@@ -410,14 +410,14 @@ BeginCmp
 TimeStamp = /4FAEB0F4;
 Reference = U3;
 ValeurCmp = NCP1402;
-IdModule  = ;
+IdModule  = SOT23-5;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA825C0;
 Reference = X1;
 ValeurCmp = CRYSTAL;
-IdModule  = ;
+IdModule  = NX5032GA;
 EndCmp
 
 BeginCmp
