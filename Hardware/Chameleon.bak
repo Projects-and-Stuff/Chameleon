@@ -1,8 +1,9 @@
-PCBNEW-LibModule-V1  5/13/2012 1:40:49 PM
+PCBNEW-LibModule-V1  5/16/2012 6:01:22 PM
 # encoding utf-8
 $INDEX
 Battery
 NX5032GA
+PAS_6x6mm
 PLCC-5050
 SOIC-14
 Sensor_50mm
@@ -368,89 +369,6 @@ Ne 0 ""
 Po -945 630
 $EndPAD
 $EndMODULE  PLCC-5050
-$MODULE ZX62-B-5PA
-Po 0 0 0 15 4FAF4EBC 00000000 ~~
-Li ZX62-B-5PA
-Sc 00000000
-AR
-Op 0 0 0
-T0 -2362 -197 276 276 900 39 N I 21 N "ZX62-B-5PA"
-T1 2362 0 276 276 900 39 N V 21 N "VAL**"
-DS -1476 1102 -1476 1260 39 21
-DS -1476 1260 1476 1260 39 21
-DS 1476 1260 1476 1102 39 21
-DS 1476 39 1476 276 39 21
-DS -1476 39 -1476 276 39 21
-DS -630 -630 -768 -630 39 21
-DS 630 -630 768 -630 39 21
-DS 374 -630 394 -630 39 21
-DS 118 -630 138 -630 39 21
-DS -138 -630 -118 -630 39 21
-DS -394 -630 -374 -630 39 21
-$PAD
-Sh "1" R 157 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -512 -394
-$EndPAD
-$PAD
-Sh "2" R 157 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -256 -394
-$EndPAD
-$PAD
-Sh "3" R 157 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 0 -394
-$EndPAD
-$PAD
-Sh "4" R 157 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 256 -394
-$EndPAD
-$PAD
-Sh "5" R 157 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 512 -394
-$EndPAD
-$PAD
-Sh "" R 984 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -1299 -394
-$EndPAD
-$PAD
-Sh "" R 984 787 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 1299 -394
-$EndPAD
-$PAD
-Sh "" R 787 748 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 1614 689
-$EndPAD
-$PAD
-Sh "" R 787 748 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po -1614 689
-$EndPAD
-$EndMODULE  ZX62-B-5PA
 $MODULE NX5032GA
 Po 0 0 0 15 4FAF530C 00000000 ~~
 Li NX5032GA
@@ -575,7 +493,7 @@ $MODULE TestPoint_1-pin
 Po 0 0 0 15 4FAFF1EC 00000000 ~~
 Li TestPoint_1-pin
 Sc 00000000
-AR 
+AR
 Op 0 0 0
 T0 0 -630 276 276 0 39 N V 21 N "TestPoint"
 T1 0 669 276 276 0 39 N I 21 N "VAL**"
@@ -587,4 +505,243 @@ Ne 0 ""
 Po 0 0
 $EndPAD
 $EndMODULE  TestPoint_1-pin
+$MODULE ZX62-B-5PA
+Po 0 0 0 15 4FB2FDB0 00000000 ~~
+Li ZX62-B-5PA
+Sc 00000000
+AR
+Op 0 0 0
+T0 -2362 -197 276 276 900 39 N I 21 N "ZX62-B-5PA"
+T1 2362 0 276 276 900 39 N V 21 N "VAL**"
+DS -1476 1102 -1476 1260 39 21
+DS -1476 1260 1476 1260 39 21
+DS 1476 1260 1476 1102 39 21
+DS 1476 39 1476 276 39 21
+DS -1476 39 -1476 276 39 21
+DS -630 -630 -768 -630 39 21
+DS 630 -630 768 -630 39 21
+DS 374 -630 394 -630 39 21
+DS 118 -630 138 -630 39 21
+DS -138 -630 -118 -630 39 21
+DS -394 -630 -374 -630 39 21
+$PAD
+Sh "1" R 157 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -512 -394
+$EndPAD
+$PAD
+Sh "2" R 157 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -256 -394
+.LocalClearance 1
+$EndPAD
+$PAD
+Sh "3" R 157 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0 -394
+.LocalClearance 1
+$EndPAD
+$PAD
+Sh "4" R 157 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 256 -394
+.LocalClearance 1
+$EndPAD
+$PAD
+Sh "5" R 157 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 512 -394
+$EndPAD
+$PAD
+Sh "" R 984 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1299 -394
+$EndPAD
+$PAD
+Sh "" R 984 787 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1299 -394
+$EndPAD
+$PAD
+Sh "" R 787 748 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1614 689
+$EndPAD
+$PAD
+Sh "" R 787 748 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1614 689
+$EndPAD
+$EndMODULE  ZX62-B-5PA
+$MODULE PAS_6x6mm
+Po 0 0 0 15 4FB423A0 00000000 ~~
+Li PAS_6x6mm
+Sc 00000000
+AR 
+Op 0 0 0
+T0 0 -3500 600 600 0 120 N I 21 N "PAS_5x5mm"
+T1 0 3750 600 600 0 120 N I 21 N "VAL**"
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po 826 827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po 275 827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po 275 -275
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po -276 827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -828 828
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -276 -827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 275 -827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 826 -827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -828 -827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -828 -276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -828 276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 826 -276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 826 276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -276 276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 275 276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po -276 -276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$EndMODULE  PAS_6x6mm
 $EndLIBRARY

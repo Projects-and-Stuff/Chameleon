@@ -1,8 +1,9 @@
-PCBNEW-LibModule-V1  5/15/2012 9:07:05 PM
+PCBNEW-LibModule-V1  5/16/2012 6:01:45 PM
 # encoding utf-8
 $INDEX
 Battery
 NX5032GA
+PAS_6x6mm
 PLCC-5050
 SOIC-14
 Sensor_50mm
@@ -508,7 +509,7 @@ $MODULE ZX62-B-5PA
 Po 0 0 0 15 4FB2FDB0 00000000 ~~
 Li ZX62-B-5PA
 Sc 00000000
-AR 
+AR
 Op 0 0 0
 T0 -2362 -197 276 276 900 39 N I 21 N "ZX62-B-5PA"
 T1 2362 0 276 276 900 39 N V 21 N "VAL**"
@@ -590,4 +591,157 @@ Ne 0 ""
 Po -1614 689
 $EndPAD
 $EndMODULE  ZX62-B-5PA
+$MODULE PAS_6x6mm
+Po 0 0 0 15 4FB423C3 00000000 ~~
+Li PAS_6x6mm
+Sc 00000000
+AR 
+Op 0 0 0
+T0 0 -1535 600 600 0 120 N I 21 N "PAS_6x6mm"
+T1 0 1614 600 600 0 120 N I 21 N "VAL**"
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po 826 827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po 275 827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po 275 -275
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po -276 827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -828 828
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -276 -827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 275 -827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 826 -827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -828 -827
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -828 -276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -828 276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 826 -276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 826 276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -276 276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 275 276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$PAD
+Sh "" R 472 472 0 0 0
+Dr 0 0 0
+At SMD N 00A80000
+Ne 0 ""
+Po -276 -276
+.SolderMask 197
+.LocalClearance 39
+$EndPAD
+$EndMODULE  PAS_6x6mm
 $EndLIBRARY
