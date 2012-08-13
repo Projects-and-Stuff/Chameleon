@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                             <?xml-stylesheet type='text/xsl' href='Summary.xslt'?><SUMMARY>
+  <DeviceInformation>
+    <DeviceName>ATtiny84</DeviceName>
+    <DeviceVariant>14/20</DeviceVariant>
+    <Technology>QMatrix</Technology>
+  </DeviceInformation>
+  <SensorInformation TotalSensors="1">
+    <NumberOfButtons>1</NumberOfButtons>
+    <NumberOfWheels>0</NumberOfWheels>
+    <NumberOfSliders>0</NumberOfSliders>
+  </SensorInformation>
+  <ChannelInformation>
+    <TotalChannelsConsumed>1</TotalChannelsConsumed>
+  </ChannelInformation>
+  <PinConfiguration>
+    <AvailablePorts>A,B</AvailablePorts>
+    <TotalPinsUsed>8</TotalPinsUsed>
+    <PinConfig>
+      <XYLinesConfig>4x1</XYLinesConfig>
+      <XLines>PB2,</XLines>
+      <YALines>PA2,</YALines>
+      <YBLines>PA0,</YBLines>
+      <SMPPort>PA3</SMPPort>
+      <AINOPort>PA1</AINOPort>
+      <Sensors>
+        <Sensor Name="Button0" ChannelName="Channel0" X="PB2" YA="PA2" YB="PA0" />
+      </Sensors>
+    </PinConfig>
+  </PinConfiguration>
+  <LibraryInformation ToolChainName="GCC">
+    <DefaultLibrary>libavr25g1s0_4qm_4x_1y_k_0rs.a</DefaultLibrary>
+  </LibraryInformation>
+  <MemoryInformation>
+    <DataMemory>
+      <TotalDataMemory>512</TotalDataMemory>
+      <DataMemoryUsed>91</DataMemoryUsed>
+      <DataMemoryFree>421</DataMemoryFree>
+    </DataMemory>
+    <CodeMemory>
+      <TotalCodeMemory>8192</TotalCodeMemory>
+      <CodeMemoryUsed>3184</CodeMemoryUsed>
+      <CodeMemoryFree>5008</CodeMemoryFree>
+    </CodeMemory>
+  </MemoryInformation>
+  <OtherOptions>
+    <DelayCycle>1</DelayCycle>
+  </OtherOptions>
+  <ComponentID>qtlib.generic.tmx.qm.avr25g1s0</ComponentID>
+</SUMMARY>

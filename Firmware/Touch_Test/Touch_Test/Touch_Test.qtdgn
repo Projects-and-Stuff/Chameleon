@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Kit projectId="2" projectName="default" Technology="QMatrix" DeviceVariant="14/20" QTouchDesignVersion="1.0" QTouchLibraryVersion="5.0.1082">
+  <KitLayout>
+    <KitSize width="400" height="250" kitPanelThickness="0.1" kitImage="" />
+    <Button id="0" name="Button0" width="11" height="11" positionX="10" positionY="10" fromChannel="0" toChannel="0" type="0" />
+  </KitLayout>
+  <GlobalConfiguration recalibrationThreshold="1" detectIntegrationLimit="2" driftHoldTime="20" sensorMaximumDuration="0" negativeDriftRate="20" positiveDriftRate="5" libraryTimingSetting="0" measurementPeriod="50" positiveRecalibrationDelay="0" ticksPerMilliSec="4" />
+  <OtherOprtions delayCycle="1" powerOptimization="" />
+  <SensorConfigurations autoAssign="true">
+    <SensorConfiguration sensorType="1" fromChannel="0" toChannel="0" aksGroup="0" detectThreshold="10" detectHysteresis="3" positiveRecalibrationFlag="0" />
+  </SensorConfigurations>
+  <PinConfiguration useDefaultPinConfiguration="False">
+    <Channels SelectedChannel="0" XxY="4x1" />
+    <PinConfig>
+      <XLines>PB2,</XLines>
+      <YALines>PA2,</YALines>
+      <YBLines>PA0,</YBLines>
+      <SMPPort>PA3</SMPPort>
+      <AINOPort>PA1</AINOPort>
+      <Channels SelectedChannel="0" XxY="4x1" />
+    </PinConfig>
+  </PinConfiguration>
+</Kit>

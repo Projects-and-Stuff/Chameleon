@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 5/13/2012 1:41:16 PM
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 8/13/2012 3:14:02 PM
 
 BeginCmp
 TimeStamp = /4FA6C819;
@@ -113,9 +113,9 @@ IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FAEB189;
+TimeStamp = /50294AD3;
 Reference = D1;
-ValeurCmp = DIODESCH;
+ValeurCmp = DIODESCH_MOD;
 IdModule  = SOT23;
 EndCmp
 
@@ -192,14 +192,14 @@ EndCmp
 BeginCmp
 TimeStamp = /4FA82E61;
 Reference = R1;
-ValeurCmp = 10k;
+ValeurCmp = 1.5k;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA82E5A;
 Reference = R2;
-ValeurCmp = 10k;
+ValeurCmp = 1.5k;
 IdModule  = Standard_1210;
 EndCmp
 
@@ -227,35 +227,35 @@ EndCmp
 BeginCmp
 TimeStamp = /4FA81C10;
 Reference = R6;
-ValeurCmp = 220;
+ValeurCmp = 320;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C0D;
 Reference = R7;
-ValeurCmp = 220;
+ValeurCmp = 320;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BC4;
 Reference = R8;
-ValeurCmp = 220;
+ValeurCmp = 320;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BD4;
 Reference = R9;
-ValeurCmp = 220;
+ValeurCmp = 320;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C14;
 Reference = R10;
-ValeurCmp = 220;
+ValeurCmp = 320;
 IdModule  = Standard_1210;
 EndCmp
 
@@ -269,70 +269,70 @@ EndCmp
 BeginCmp
 TimeStamp = /4FA81C0F;
 Reference = R12;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C0C;
 Reference = R13;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BCC;
 Reference = R14;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BD8;
 Reference = R15;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C13;
 Reference = R16;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C0E;
 Reference = R17;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C0B;
 Reference = R18;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BD0;
 Reference = R19;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81BE3;
 Reference = R20;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4FA81C12;
 Reference = R21;
-ValeurCmp = 150;
+ValeurCmp = 220;
 IdModule  = Standard_1210;
 EndCmp
 
@@ -403,7 +403,7 @@ BeginCmp
 TimeStamp = /4FAEB0F4;
 Reference = U3;
 ValeurCmp = NCP1402;
-IdModule  = SOT23-5;
+IdModule  = SOT23-5_Long;
 EndCmp
 
 BeginCmp
