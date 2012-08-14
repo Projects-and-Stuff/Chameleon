@@ -48,6 +48,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
+
 #define __enable_interrupt()  sei()
 #define __delay_cycles(n)     __builtin_avr_delay_cycles(n)
 
@@ -60,6 +61,7 @@
 #include "QDebug.h"
 #include "QDebugTransport.h"
 #endif
+
 
 /*----------------------------------------------------------------------------
                             manifest constants
@@ -194,7 +196,7 @@ void touch_init( void )
     /* Configure the Sensors as keys or Keys With Rotor/Sliders in this function */
     config_sensors();
 
-    /* initialise touch sensing */
+    /* initialize touch sensing */
     qt_init_sensing();
 
     /*  Set the parameters like recalibration threshold, Max_On_Duration etc in this function by the user */
@@ -246,7 +248,7 @@ Input   :   n/a
 Output  :   n/a
 Notes   :
 ============================================================================*/
-void touch_measure()
+uint16_t touch_measure()
 {
    /*status flags to indicate the re-burst for library*/
    static uint16_t status_flag = 0u;
@@ -287,11 +289,14 @@ void touch_measure()
 				#endif
 
                 /* Time-critical host application code goes here */
+				
+				
 
             }while (burst_flag) ;
 
         }
 
+return status_flag;
 
 }
 
@@ -330,7 +335,7 @@ Notes   :   Generated code from QTouch Studio. Do not change
 ============================================================================*/
 static void config_sensors(void)
 {
-	qt_enable_key( CHANNEL_0, NO_AKS_GROUP, 10u, HYST_6_25 );
+	qt_enable_key( CHANNEL_0, NO_AKS_GROUP, 26u, HYST_6_25 );
 
 }
 

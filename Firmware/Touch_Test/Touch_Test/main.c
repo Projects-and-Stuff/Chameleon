@@ -73,7 +73,7 @@
 /*----------------------------------------------------------------------------
                                 prototypes
 ----------------------------------------------------------------------------*/
-extern void touch_measure();
+extern uint16_t touch_measure();
 extern void touch_init( void );
 extern void init_system( void );
 extern void init_timer_isr(void);
@@ -216,22 +216,21 @@ void pca9685_init2(int address)
 	i2c_write(PCA9685_RESTART);      // Setting mode to sleep so we can change the default PWM frequency
 	i2c_stop();                 // Stop
 	
-	_delay_loop_2(150);           // Required 50 us delay
+	_delay_ms(10);
 	
 	i2c_start(address);                // Start
 	i2c_write(MODE1);            // PWM frequency PRE_SCALE address
 	i2c_write(PCA9685_AI);            // osc_clk/(4096*update_rate) // 25000000/(4096*1500)= 4.069 ~4
 	i2c_stop();                 // Stop
 	
-	_delay_loop_2(150);           // delay at least 500 us
+	_delay_ms(10);
 	
 	i2c_start(address);                // Start
 	i2c_write(MODE2);           // Mode 1 register address
 	i2c_write(PCA9685_INVRT);            // Set to our preferred mode[ Reset, INT_CLK, Auto-Increment, Normal Mode]
 	i2c_stop();                 // Stop
 	
-	_delay_loop_2(10000);           // delay at least 500 us
-	_delay_loop_2(10000);           // delay at least 500 us
+	_delay_ms(10);
 	
 	
 	for(int i = 0; i <= LEDCOUNT; i++)
@@ -243,8 +242,7 @@ void pca9685_init2(int address)
 		i2c_write(0x10);
 		i2c_write(0x50);
 		i2c_stop();                 // Stop
-		_delay_loop_2(10000);           // delay at least 500 us
-		_delay_loop_2(10000);           // delay at least 500 us
+		_delay_ms(10);
 		
 	}
 	
@@ -273,7 +271,7 @@ void pca9685_send_all(int address)
 		 pwm = PWMData[i]>>8;    // update selected LED data in the array
 		 i2c_write(pwm);         // LED_OFF_H
 		 i2c_stop();             // Stop
-		 _delay_loop_2(150);           // delay at least 500 us
+		_delay_ms(60);           // delay at least 500 us
 
 	 }
 	 
@@ -373,32 +371,32 @@ int main( void )
 	/* Initialize Touch sensors */
 	touch_init();
 
-		i2c_init();                             // initialize I2C library
-		_delay_loop_2(100);           // delay
+	i2c_init();                             // initialize I2C library
+	_delay_ms(60);           // delay
 		
-		pca9685_init2(PCA9685);
-		_delay_loop_2(10000);           // delay
+	pca9685_init2(PCA9685);
+	_delay_ms(60);           // delay
 
-		pca9685_brightness(PCA9685,50,15);
+	pca9685_brightness(PCA9685,50,15);
 
-
+	__enable_interrupt();  // Enable interrupts for QMatrix (Per AVR1203)
+	
+	
     /* loop forever */
     for( ; ; )
     {
 		
-		touch_measure();
-	
-		/*
 		
-        if (GET_SENSOR_STATE())
+		if (touch_measure() == 0x0001)
 		{
-			modeStatus = 2;
+			pca9685_brightness(PCA9685,0,15);
+			_delay_ms(200);
+			pca9685_brightness(PCA9685,50,15);
+			_delay_ms(200);
 		}
-		else
-		{
-			modeStatus = 1;
-		}
-		*/
+		
+		
+		
 
     /*  Time Non-critical host application code goes here  */
 	
@@ -411,7 +409,7 @@ int main( void )
 	
 	
 	
-	
+	/* TESTING TOUCH
 	
 	
 	
@@ -471,71 +469,92 @@ int main( void )
 	}
 	
 	
-	int mode5State = 0;
+	//int mode5State = 0; // Not needed?
 	
 	
 	
-	if (modeStatus == 0) // check what the current mode is, and modify the animation based on that
+	// check what the current mode is, and modify the animation based on that
+	
+	if (modeStatus == 0) // 
 	{
 		
 		for(int i = 3; i <= 5; i++)
 		{
 			pca9685_brightness(PCA9685,1,i);
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-
 		}
+		
+		_delay_ms(100);
 		
 		for(int i = 0; i <= 2; i++)
 		{
 			pca9685_brightness(PCA9685,1,i);
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-
 		}
 		
-		for(int i = 6; i <= LEDCOUNT - 1; i++)
+		_delay_ms(100);
+		
+		for(int i = 6; i <= 8; i++)
 		{
 			pca9685_brightness(PCA9685,1,i);
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-
 		}
+		
+		_delay_ms(100);
+
+		for(int i = 9; i <= 11; i++)
+		{
+			pca9685_brightness(PCA9685,1,i);
+		}
+		
+		_delay_ms(100);
+
+
+		for(int i = 12; i <= 14; i++)
+		{
+			pca9685_brightness(PCA9685,1,i);
+		}
+		
+		_delay_ms(100);
 		
 		///////////////////////////////
 		
 		for(int i = 3; i <= 5; i++)
 		{
 			pca9685_brightness(PCA9685,25,i);
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-
 		}
+		
+		_delay_ms(100);
 		
 		for(int i = 0; i <= 2; i++)
 		{
 			pca9685_brightness(PCA9685,25,i);
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-
 		}
 		
-		for(int i = 6; i <= LEDCOUNT - 1; i++)
+		_delay_ms(100);
+		
+		for(int i = 6; i <= 8; i++)
 		{
 			pca9685_brightness(PCA9685,25,i);
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(10000);           // delay
-			_delay_loop_2(1000);           // delay
-
 		}
 		
+		_delay_ms(100);
+
+		for(int i = 9; i <= 11; i++)
+		{
+			pca9685_brightness(PCA9685,25,i);
+		}
+		
+		_delay_ms(100);
+
+		for(int i = 12; i <= 14; i++)
+		{
+			pca9685_brightness(PCA9685,25,i);
+		}
+		
+		_delay_ms(100);
 		
 	}
+	
+	
+	
 	else if(modeStatus == 1)
 	{
 		
@@ -547,15 +566,7 @@ int main( void )
 			pca9685_brightness(PCA9685,0,i+2);
 		}
 		
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
+		_delay_ms(250);
 		
 		for(int i = 0; i <= LEDCOUNT - 1; i = i+3)
 		{
@@ -564,15 +575,7 @@ int main( void )
 			pca9685_brightness(PCA9685,0,i+2);
 		}
 		
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
+		_delay_ms(250);
 		
 		// Blink Blue
 		for(int i = 0; i <= LEDCOUNT - 1; i = i+3)
@@ -582,15 +585,7 @@ int main( void )
 			pca9685_brightness(PCA9685,0,i+2);
 		}
 		
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
+		_delay_ms(250);
 
 
 		for(int i = 0; i <= LEDCOUNT - 1; i = i+3)
@@ -600,15 +595,7 @@ int main( void )
 			pca9685_brightness(PCA9685,0,i+2);
 		}
 		
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
+		_delay_ms(250);
 
 		// Blink Green
 		for(int i = 0; i <= LEDCOUNT - 1; i = i+3)
@@ -618,15 +605,7 @@ int main( void )
 			pca9685_brightness(PCA9685,20,i+2);
 		}
 		
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
+		_delay_ms(250);
 
 
 		for(int i = 0; i <= LEDCOUNT - 1; i = i+3)
@@ -636,15 +615,7 @@ int main( void )
 			pca9685_brightness(PCA9685,0,i+2);
 		}
 		
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
+		_delay_ms(250);
 
 		
 		
@@ -654,10 +625,7 @@ int main( void )
 	else if(modeStatus == 2)
 	{
 		
-		// Blink Low Power
-		
-		
-		// Turn off all LEDs
+		// Turn off all LEDs before sequencing
 		for(int i = 1; i <= LEDCOUNT - 1; i++)
 		{
 			pca9685_brightness(PCA9685,0,i);
@@ -667,123 +635,77 @@ int main( void )
 		pca9685_brightness(PCA9685,1,3);
 		pca9685_brightness(PCA9685,1,4);
 		pca9685_brightness(PCA9685,1,5);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(200);
 		pca9685_brightness(PCA9685,0,3);
 		pca9685_brightness(PCA9685,0,4);
 		pca9685_brightness(PCA9685,0,5);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(200);
 		
 		pca9685_brightness(PCA9685,1,0);
 		pca9685_brightness(PCA9685,1,1);
 		pca9685_brightness(PCA9685,1,2);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(100);
 		pca9685_brightness(PCA9685,0,0);
 		pca9685_brightness(PCA9685,0,1);
 		pca9685_brightness(PCA9685,0,2);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(300);
 
 		pca9685_brightness(PCA9685,1,6);
 		pca9685_brightness(PCA9685,1,7);
 		pca9685_brightness(PCA9685,1,8);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(100);
 		pca9685_brightness(PCA9685,0,6);
 		pca9685_brightness(PCA9685,0,7);
 		pca9685_brightness(PCA9685,0,8);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-
+		_delay_ms(300);
 
 		pca9685_brightness(PCA9685,1,9);
 		pca9685_brightness(PCA9685,1,10);
 		pca9685_brightness(PCA9685,1,11);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(100);
 		pca9685_brightness(PCA9685,0,9);
 		pca9685_brightness(PCA9685,0,10);
 		pca9685_brightness(PCA9685,0,11);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(300);
 
 
 		pca9685_brightness(PCA9685,1,12);
 		pca9685_brightness(PCA9685,1,13);
 		pca9685_brightness(PCA9685,1,14);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(200);
 		pca9685_brightness(PCA9685,0,12);
 		pca9685_brightness(PCA9685,0,13);
 		pca9685_brightness(PCA9685,0,14);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(200);
 		
 		
 		pca9685_brightness(PCA9685,1,9);
 		pca9685_brightness(PCA9685,1,10);
 		pca9685_brightness(PCA9685,1,11);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(100);
 		pca9685_brightness(PCA9685,0,9);
 		pca9685_brightness(PCA9685,0,10);
 		pca9685_brightness(PCA9685,0,11);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(300);
 		
 		
 		pca9685_brightness(PCA9685,1,6);
 		pca9685_brightness(PCA9685,1,7);
 		pca9685_brightness(PCA9685,1,8);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(100);
 		pca9685_brightness(PCA9685,0,6);
 		pca9685_brightness(PCA9685,0,7);
 		pca9685_brightness(PCA9685,0,8);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		
-		
+		_delay_ms(300);			
+				
 		pca9685_brightness(PCA9685,1,0);
 		pca9685_brightness(PCA9685,1,1);
 		pca9685_brightness(PCA9685,1,2);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(100);
 		pca9685_brightness(PCA9685,0,0);
 		pca9685_brightness(PCA9685,0,1);
 		pca9685_brightness(PCA9685,0,2);
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(300);
 		
 		
 		
@@ -800,33 +722,11 @@ int main( void )
 			pca9685_brightness(PCA9685,0,i);
 		}
 		
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
-		_delay_loop_2(10000);           // delay
+		_delay_ms(500);
 	}
+	
+	
+	
 	else if(modeStatus == 4)
 	{
 		
@@ -838,12 +738,8 @@ int main( void )
 			pca9685_brightness(PCA9685,100,i+2);
 		}
 		
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		
+		_delay_ms(300);
+				
 		for(int i = 0; i <= LEDCOUNT - 1; i = i+3)
 		{
 			pca9685_brightness(PCA9685,0,i);
@@ -851,19 +747,7 @@ int main( void )
 			pca9685_brightness(PCA9685,0,i+2);
 		}
 		
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
+		_delay_ms(500);		
 	}
 	
 	
@@ -892,12 +776,8 @@ int main( void )
 		pca9685_brightness(PCA9685,0,13); // 4
 		pca9685_brightness(PCA9685,0,14); // 5
 		
-				
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
+		_delay_ms(200);
+		
 		
 		for(int i = 0; i <= LEDCOUNT - 1; i = i+3)
 		{
@@ -906,20 +786,10 @@ int main( void )
 			pca9685_brightness(PCA9685,0,i+2);
 		}
 		
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
-		_delay_loop_2(30000);           // delay
+		_delay_ms(400);
 	}
+	
+	*/
 	
 	
     }
