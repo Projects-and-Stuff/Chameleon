@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  8/13/2012 3:37:06 PM
+# EESchema Netlist Version 1.1 created  8/15/2012 11:14:38 PM
 (
  ( /50294AD3 $noname  D1 DIODESCH_MOD {Lib=DIODESCH_MOD}
   (    1 N-000051 )
@@ -77,7 +77,7 @@
   (    1 /SCK )
   (    2 /VCC )
  )
- ( /4FA82A80 $noname  CS1 10uF {Lib=CSMALL}
+ ( /4FA82A80 $noname  C14 10uF {Lib=CSMALL}
   (    1 /VCC )
   (    2 GND )
  )
@@ -125,7 +125,7 @@
   (   13 /Y0B )
   (   14 GND )
  )
- ( /4FA81D6C $noname  R11 220 {Lib=R}
+ ( /4FA81D6C $noname  R11 330 {Lib=R}
   (    1 N-000018 )
   (    2 N-000042 )
  )
@@ -137,7 +137,7 @@
   (    1 /VCC )
   (    2 N-000042 )
  )
- ( /4FA81C14 $noname  R10 320 {Lib=R}
+ ( /4FA81C14 $noname  R10 330 {Lib=R}
   (    1 N-000043 )
   (    2 N-000032 )
  )
@@ -149,7 +149,7 @@
   (    1 N-000016 )
   (    2 N-000019 )
  )
- ( /4FA81C10 $noname  R6 320 {Lib=R}
+ ( /4FA81C10 $noname  R6 330 {Lib=R}
   (    1 N-000050 )
   (    2 N-000023 )
  )
@@ -161,7 +161,7 @@
   (    1 N-000015 )
   (    2 N-000033 )
  )
- ( /4FA81C0D $noname  R7 320 {Lib=R}
+ ( /4FA81C0D $noname  R7 330 {Lib=R}
   (    1 N-000034 )
   (    2 N-000021 )
  )
@@ -181,7 +181,7 @@
   (    1 N-000044 )
   (    2 N-000045 )
  )
- ( /4FA81BD4 $noname  R9 320 {Lib=R}
+ ( /4FA81BD4 $noname  R9 330 {Lib=R}
   (    1 N-000049 )
   (    2 N-000028 )
  )
@@ -193,7 +193,7 @@
   (    1 N-000046 )
   (    2 N-000027 )
  )
- ( /4FA81BC4 $noname  R8 320 {Lib=R}
+ ( /4FA81BC4 $noname  R8 330 {Lib=R}
   (    1 N-000017 )
   (    2 N-000047 )
  )
@@ -331,7 +331,7 @@ $component R2
  R?-*
  SM1206
 $endlist
-$component CS1
+$component C14
  SM*
  C?
  C1-1
@@ -584,7 +584,7 @@ Net 1 "GND" "GND"
  C4 2
  C2 2
  P1 6
- CS1 2
+ C14 2
  C3 2
  C5 2
  S1 2
@@ -758,7 +758,7 @@ Net 55 "/VCC" "VCC"
  D1 3
  U1 28
  R2 2
- CS1 1
+ C14 1
  U3 1
  U3 2
  R4 1

@@ -386,30 +386,22 @@ int main( void )
     for( ; ; )
     {
 		
-		
-		if (touch_measure() == 0x0001)
+		_delay_ms(200); //let everything discharge?
+		if (touch_measure() == 0x0001) // Check if we have a touch sensed
 		{
 			pca9685_brightness(PCA9685,0,15);
 			_delay_ms(200);
 			pca9685_brightness(PCA9685,50,15);
 			_delay_ms(200);
 		}
+		else
+		{
+			
 		
 		
 		
 
     /*  Time Non-critical host application code goes here  */
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/* TESTING TOUCH
 	
 	
 	
@@ -789,7 +781,8 @@ int main( void )
 		_delay_ms(400);
 	}
 	
-	*/
+	
+		} // Done with if/else for touch sense		
 	
 	
     }

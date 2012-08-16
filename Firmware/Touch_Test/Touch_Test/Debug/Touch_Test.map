@@ -184,7 +184,7 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/av
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x14c0
+.text           0x00000000     0x1d6c
  *(.vectors)
  .vectors       0x00000000       0x22 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25/crttn84.o
                 0x00000000                __vector_default
@@ -266,124 +266,124 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/av
                 0x000000ec                i2c_readNak
                 0x000000f0                i2c_readAck
                 0x000000f2                i2c_read
- .text          0x00000128      0x210 main.o
+ .text          0x00000128      0x2a4 main.o
                 0x00000128                pca9685_init2
                 0x000001ae                pca9685_send_all
                 0x0000021e                pca9685_send
-                0x00000296                pca9685_brightness
-                0x00000326                PCA9685AllLedOff
- .text          0x00000338        0x0 src/QTouch/BitBangSPI_Master.o
- .text          0x00000338       0x92 src/QTouch/init_mcu_attiny84.o
-                0x00000338                init_timer_isr
-                0x00000350                __vector_9
-                0x000003b4                set_timer_period
-                0x000003ba                init_system
- .text          0x000003ca        0x0 src/QTouch/eeprom_access.o
- .text          0x000003ca        0x0 src/QTouch/QDebug.o
- .text          0x000003ca        0x0 src/QTouch/QDebugTransport.o
- .text          0x000003ca       0xc8 src/QTouch/qm_asm_tiny_mega.o
-                0x000003ca                _00110000001_
-                0x0000040e                _00110000100_
-                0x00000476                _00110000010_
-                0x00000484                _00110000011_
-                0x00000488                _00110000110_
- .text          0x00000492       0x74 touch.o
-                0x00000492                touch_init
-                0x000004ce                touch_measure
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixsfsi.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixunssfsi.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(floatsisf.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_split3.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_zero.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3x.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_inf.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_nan.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscA.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscB.o)
- .text          0x00000506        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_round.o)
- .text          0x00000506       0xf8 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(burst_qm_1.o)
-                0x00000506                burst_qm_1
- .text          0x000005fe      0x2dc ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_api.o)
-                0x000005fe                qt_init_sensing_with_burst
-                0x00000620                qt_get_library_sig
-                0x0000063c                qt_calibrate_sensing
-                0x00000654                qt_reset_sensing
-                0x0000068a                qt_measure_sensors
-                0x0000077a                qt_enable_key
-                0x00000806                qt_get_sensor_delta
- .text          0x000008da      0x6f6 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_process.o)
-                0x0000093c                start_cal_sensor
-                0x00000972                process_sensor
-                0x00000fa4                get_channel_delta
- .text          0x00000fd0      0x17a ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_burst_qm.o)
-                0x00000fd0                burst_init
-                0x00001092                burst_reset
-                0x000010a6                burst
- .text          0x0000114a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
- .text          0x0000114a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
- .text          0x0000114a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
- .text          0x0000114a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
- .text          0x0000114a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
- .text          0x0000114a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
-                0x0000114a                . = ALIGN (0x2)
+                0x0000032a                pca9685_brightness
+                0x000003ba                PCA9685AllLedOff
+ .text          0x000003cc        0x0 src/QTouch/BitBangSPI_Master.o
+ .text          0x000003cc       0x92 src/QTouch/init_mcu_attiny84.o
+                0x000003cc                init_timer_isr
+                0x000003e4                __vector_9
+                0x00000448                set_timer_period
+                0x0000044e                init_system
+ .text          0x0000045e        0x0 src/QTouch/eeprom_access.o
+ .text          0x0000045e        0x0 src/QTouch/QDebug.o
+ .text          0x0000045e        0x0 src/QTouch/QDebugTransport.o
+ .text          0x0000045e       0xc8 src/QTouch/qm_asm_tiny_mega.o
+                0x0000045e                _00110000001_
+                0x000004a2                _00110000100_
+                0x0000050a                _00110000010_
+                0x00000518                _00110000011_
+                0x0000051c                _00110000110_
+ .text          0x00000526       0x74 touch.o
+                0x00000526                touch_init
+                0x00000562                touch_measure
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixsfsi.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixunssfsi.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(floatsisf.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_split3.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_zero.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3x.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_inf.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_nan.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscA.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscB.o)
+ .text          0x0000059a        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_round.o)
+ .text          0x0000059a       0xf8 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(burst_qm_1.o)
+                0x0000059a                burst_qm_1
+ .text          0x00000692      0x2dc ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_api.o)
+                0x00000692                qt_init_sensing_with_burst
+                0x000006b4                qt_get_library_sig
+                0x000006d0                qt_calibrate_sensing
+                0x000006e8                qt_reset_sensing
+                0x0000071e                qt_measure_sensors
+                0x0000080e                qt_enable_key
+                0x0000089a                qt_get_sensor_delta
+ .text          0x0000096e      0x6f6 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_process.o)
+                0x000009d0                start_cal_sensor
+                0x00000a06                process_sensor
+                0x00001038                get_channel_delta
+ .text          0x00001064      0x17a ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_burst_qm.o)
+                0x00001064                burst_init
+                0x00001126                burst_reset
+                0x0000113a                burst
+ .text          0x000011de        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
+ .text          0x000011de        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
+ .text          0x000011de        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
+ .text          0x000011de        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .text          0x000011de        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
+ .text          0x000011de        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
+                0x000011de                . = ALIGN (0x2)
  *(.text.*)
- .text.startup  0x0000114a       0x8c main.o
-                0x0000114a                main
+ .text.startup  0x000011de      0x8a4 main.o
+                0x000011de                main
  .text.avr-libc.fplib
-                0x000011d6        0xa c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixsfsi.o)
-                0x000011d6                __fixsfsi
+                0x00001a82        0xa c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixsfsi.o)
+                0x00001a82                __fixsfsi
  .text.avr-libc.fplib
-                0x000011e0       0x58 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixunssfsi.o)
-                0x000011e0                __fixunssfsi
+                0x00001a8c       0x58 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixunssfsi.o)
+                0x00001a8c                __fixunssfsi
  .text.avr-libc.fplib
-                0x00001238       0x7a c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(floatsisf.o)
-                0x00001238                __floatunsisf
-                0x0000123c                __floatsisf
+                0x00001ae4       0x7a c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(floatsisf.o)
+                0x00001ae4                __floatunsisf
+                0x00001ae8                __floatsisf
  .text.avr-libc.fplib
-                0x000012b2       0x44 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_split3.o)
-                0x000012b2                __fp_split3
-                0x000012c2                __fp_splitA
+                0x00001b5e       0x44 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_split3.o)
+                0x00001b5e                __fp_split3
+                0x00001b6e                __fp_splitA
  .text.avr-libc.fplib
-                0x000012f6        0xe c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_zero.o)
-                0x000012f6                __fp_zero
-                0x000012f8                __fp_szero
+                0x00001ba2        0xe c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_zero.o)
+                0x00001ba2                __fp_zero
+                0x00001ba4                __fp_szero
  .text.avr-libc.fplib
-                0x00001304        0x4 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3.o)
-                0x00001304                __mulsf3
+                0x00001bb0        0x4 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3.o)
+                0x00001bb0                __mulsf3
  .text.avr-libc.fplib
-                0x00001308       0xd2 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3x.o)
-                0x0000131a                __mulsf3x
-                0x0000131e                __mulsf3_pse
+                0x00001bb4       0xd2 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3x.o)
+                0x00001bc6                __mulsf3x
+                0x00001bca                __mulsf3_pse
  .text.avr-libc.fplib
-                0x000013da        0xc c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_inf.o)
-                0x000013da                __fp_inf
+                0x00001c86        0xc c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_inf.o)
+                0x00001c86                __fp_inf
  .text.avr-libc.fplib
-                0x000013e6        0x6 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_nan.o)
-                0x000013e6                __fp_nan
+                0x00001c92        0x6 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_nan.o)
+                0x00001c92                __fp_nan
  .text.avr-libc.fplib
-                0x000013ec        0xe c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscA.o)
-                0x000013ec                __fp_pscA
+                0x00001c98        0xe c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscA.o)
+                0x00001c98                __fp_pscA
  .text.avr-libc.fplib
-                0x000013fa        0xe c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscB.o)
-                0x000013fa                __fp_pscB
+                0x00001ca6        0xe c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscB.o)
+                0x00001ca6                __fp_pscB
  .text.avr-libc.fplib
-                0x00001408       0x22 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_round.o)
-                0x00001408                __fp_round
- .text.libgcc   0x0000142a       0x24 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
-                0x0000142a                __mulhi3
- .text.libgcc   0x0000144e       0x38 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
-                0x0000144e                __prologue_saves__
- .text.libgcc   0x00001486       0x36 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
-                0x00001486                __epilogue_restores__
- .text.libgcc   0x000014bc        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
- .text.libgcc   0x000014bc        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
- .text.libgcc   0x000014bc        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
-                0x000014bc                . = ALIGN (0x2)
+                0x00001cb4       0x22 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_round.o)
+                0x00001cb4                __fp_round
+ .text.libgcc   0x00001cd6       0x24 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
+                0x00001cd6                __mulhi3
+ .text.libgcc   0x00001cfa       0x38 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
+                0x00001cfa                __prologue_saves__
+ .text.libgcc   0x00001d32       0x36 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
+                0x00001d32                __epilogue_restores__
+ .text.libgcc   0x00001d68        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .text.libgcc   0x00001d68        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001d68        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
+                0x00001d68                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000014bc        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
-                0x000014bc                _exit
-                0x000014bc                exit
+ .fini9         0x00001d68        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+                0x00001d68                _exit
+                0x00001d68                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -402,131 +402,131 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/av
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000014bc        0x4 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .fini0         0x00001d68        0x4 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
  *(.fini0)
-                0x000014c0                _etext = .
+                0x00001d6c                _etext = .
 
-.data           0x00800060       0x9a load address 0x000014c0
+.data           0x00800060       0xa0 load address 0x00001d6c
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25/crttn84.o
  .data          0x00800060        0x0 i2cmaster.o
- .data          0x00800060       0x7e main.o
+ .data          0x00800060       0x84 main.o
                 0x00800060                Mode5Table
                 0x0080009c                PWMData
                 0x008000dc                qt_measurement_period_msec
- .data          0x008000de        0x0 src/QTouch/BitBangSPI_Master.o
- .data          0x008000de        0x0 src/QTouch/init_mcu_attiny84.o
- .data          0x008000de        0x0 src/QTouch/eeprom_access.o
- .data          0x008000de        0x0 src/QTouch/QDebug.o
- .data          0x008000de        0x0 src/QTouch/QDebugTransport.o
- .data          0x008000de        0x0 src/QTouch/qm_asm_tiny_mega.o
- .data          0x008000de       0x16 touch.o
-                0x008000de                yb_line_info
-                0x008000e0                ya_line_info
-                0x008000e2                x_line_info
-                0x008000f2                pqt_measure_data
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixsfsi.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixunssfsi.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(floatsisf.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_split3.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_zero.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3x.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_inf.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_nan.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscA.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscB.o)
- .data          0x008000f4        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_round.o)
- .data          0x008000f4        0x0 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(burst_qm_1.o)
- .data          0x008000f4        0x1 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_api.o)
-                0x008000f4                freq_shift
- .data          0x008000f5        0x0 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_process.o)
- .data          0x008000f5        0x4 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_burst_qm.o)
-                0x008000f5                qt_burst_lengths
- .data          0x008000f9        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
- .data          0x008000f9        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
- .data          0x008000f9        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
- .data          0x008000f9        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
- .data          0x008000f9        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
- .data          0x008000f9        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
+ .data          0x008000e4        0x0 src/QTouch/BitBangSPI_Master.o
+ .data          0x008000e4        0x0 src/QTouch/init_mcu_attiny84.o
+ .data          0x008000e4        0x0 src/QTouch/eeprom_access.o
+ .data          0x008000e4        0x0 src/QTouch/QDebug.o
+ .data          0x008000e4        0x0 src/QTouch/QDebugTransport.o
+ .data          0x008000e4        0x0 src/QTouch/qm_asm_tiny_mega.o
+ .data          0x008000e4       0x16 touch.o
+                0x008000e4                yb_line_info
+                0x008000e6                ya_line_info
+                0x008000e8                x_line_info
+                0x008000f8                pqt_measure_data
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixsfsi.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixunssfsi.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(floatsisf.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_split3.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_zero.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3x.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_inf.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_nan.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscA.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscB.o)
+ .data          0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_round.o)
+ .data          0x008000fa        0x0 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(burst_qm_1.o)
+ .data          0x008000fa        0x1 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_api.o)
+                0x008000fa                freq_shift
+ .data          0x008000fb        0x0 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_process.o)
+ .data          0x008000fb        0x4 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_burst_qm.o)
+                0x008000fb                qt_burst_lengths
+ .data          0x008000ff        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
+ .data          0x008000ff        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
+ .data          0x008000ff        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
+ .data          0x008000ff        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .data          0x008000ff        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
+ .data          0x008000ff        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x008000fa                . = ALIGN (0x2)
- *fill*         0x008000f9        0x1 00
-                0x008000fa                _edata = .
-                0x008000fa                PROVIDE (__data_end, .)
+                0x00800100                . = ALIGN (0x2)
+ *fill*         0x008000ff        0x1 00
+                0x00800100                _edata = .
+                0x00800100                PROVIDE (__data_end, .)
 
-.bss            0x008000fa       0x54
-                0x008000fa                PROVIDE (__bss_start, .)
+.bss            0x00800100       0x54
+                0x00800100                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x008000fa        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25/crttn84.o
- .bss           0x008000fa        0x0 i2cmaster.o
- .bss           0x008000fa        0x5 main.o
-                0x008000fa                current_time_ms_touch
-                0x008000fc                time_to_measure_touch
-                0x008000fd                time_ms_inc
- .bss           0x008000ff        0x0 src/QTouch/BitBangSPI_Master.o
- .bss           0x008000ff        0x0 src/QTouch/init_mcu_attiny84.o
- .bss           0x008000ff        0x0 src/QTouch/eeprom_access.o
- .bss           0x008000ff        0x0 src/QTouch/QDebug.o
- .bss           0x008000ff        0x0 src/QTouch/QDebugTransport.o
- .bss           0x008000ff        0x0 src/QTouch/qm_asm_tiny_mega.o
- .bss           0x008000ff        0x4 touch.o
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixsfsi.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixunssfsi.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(floatsisf.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_split3.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_zero.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3x.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_inf.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_nan.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscA.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscB.o)
- .bss           0x00800103        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_round.o)
- .bss           0x00800103        0x0 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(burst_qm_1.o)
- .bss           0x00800103        0x6 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_api.o)
-                0x00800103                burst_proc_qm
- .bss           0x00800109        0x4 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_process.o)
- .bss           0x0080010d        0x0 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_burst_qm.o)
- .bss           0x0080010d        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
- .bss           0x0080010d        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
- .bss           0x0080010d        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
- .bss           0x0080010d        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
- .bss           0x0080010d        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
- .bss           0x0080010d        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
+ .bss           0x00800100        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25/crttn84.o
+ .bss           0x00800100        0x0 i2cmaster.o
+ .bss           0x00800100        0x5 main.o
+                0x00800100                current_time_ms_touch
+                0x00800102                time_to_measure_touch
+                0x00800103                time_ms_inc
+ .bss           0x00800105        0x0 src/QTouch/BitBangSPI_Master.o
+ .bss           0x00800105        0x0 src/QTouch/init_mcu_attiny84.o
+ .bss           0x00800105        0x0 src/QTouch/eeprom_access.o
+ .bss           0x00800105        0x0 src/QTouch/QDebug.o
+ .bss           0x00800105        0x0 src/QTouch/QDebugTransport.o
+ .bss           0x00800105        0x0 src/QTouch/qm_asm_tiny_mega.o
+ .bss           0x00800105        0x4 touch.o
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixsfsi.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fixunssfsi.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(floatsisf.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_split3.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_zero.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(mulsf3x.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_inf.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_nan.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscA.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_pscB.o)
+ .bss           0x00800109        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr25\libm.a(fp_round.o)
+ .bss           0x00800109        0x0 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(burst_qm_1.o)
+ .bss           0x00800109        0x6 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_api.o)
+                0x00800109                burst_proc_qm
+ .bss           0x0080010f        0x4 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_process.o)
+ .bss           0x00800113        0x0 ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_burst_qm.o)
+ .bss           0x00800113        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
+ .bss           0x00800113        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
+ .bss           0x00800113        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
+ .bss           0x00800113        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .bss           0x00800113        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
+ .bss           0x00800113        0x0 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
  *(.bss*)
  *(COMMON)
- COMMON         0x0080010d       0x1c ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_api.o)
-                0x0080010d                qt_config_data
-                0x00800114                qt_filter_callback
-                0x00800116                qt_measure_data
-                0x00800127                lib_status_flags
- COMMON         0x00800129       0x1a ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_process.o)
-                0x00800129                dht_counter
-                0x0080012a                num_sensors
-                0x0080012b                sensors
- COMMON         0x00800143        0xb ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_burst_qm.o)
-                0x00800143                reg_clya
-                0x00800144                old_isr_state
-                0x00800145                reg_flyab
-                0x00800146                reg_clyb
-                0x00800147                reg_flyb
-                0x00800148                burst_mask
-                0x0080014d                reg_flya
-                0x0080014e                PROVIDE (__bss_end, .)
-                0x000014c0                __data_load_start = LOADADDR (.data)
-                0x0000155a                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800113       0x1c ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_api.o)
+                0x00800113                qt_config_data
+                0x0080011a                qt_filter_callback
+                0x0080011c                qt_measure_data
+                0x0080012d                lib_status_flags
+ COMMON         0x0080012f       0x1a ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_process.o)
+                0x0080012f                dht_counter
+                0x00800130                num_sensors
+                0x00800131                sensors
+ COMMON         0x00800149        0xb ../src/QTouch\libavr25g1s0_4qm_4x_1y_k_0rs.a(touch_burst_qm.o)
+                0x00800149                reg_clya
+                0x0080014a                old_isr_state
+                0x0080014b                reg_flyab
+                0x0080014c                reg_clyb
+                0x0080014d                reg_flyb
+                0x0080014e                burst_mask
+                0x00800153                reg_flya
+                0x00800154                PROVIDE (__bss_end, .)
+                0x00001d6c                __data_load_start = LOADADDR (.data)
+                0x00001e0c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080014e        0x0
-                0x0080014e                PROVIDE (__noinit_start, .)
+.noinit         0x00800154        0x0
+                0x00800154                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x0080014e                PROVIDE (__noinit_end, .)
-                0x0080014e                _end = .
-                0x0080014e                PROVIDE (__heap_start, .)
+                0x00800154                PROVIDE (__noinit_end, .)
+                0x00800154                _end = .
+                0x00800154                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -633,62 +633,62 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/av
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1232
+.debug_info     0x00000000     0x1e13
  *(.debug_info)
  .debug_info    0x00000000       0x8d i2cmaster.o
- .debug_info    0x0000008d      0x5c4 main.o
- .debug_info    0x00000651      0x14e src/QTouch/init_mcu_attiny84.o
- .debug_info    0x0000079f       0x9d src/QTouch/qm_asm_tiny_mega.o
- .debug_info    0x0000083c      0x4c2 touch.o
- .debug_info    0x00000cfe       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
- .debug_info    0x00000ddc       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
- .debug_info    0x00000eba       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
- .debug_info    0x00000f98       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
- .debug_info    0x00001076       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
- .debug_info    0x00001154       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
+ .debug_info    0x0000008d     0x11a5 main.o
+ .debug_info    0x00001232      0x14e src/QTouch/init_mcu_attiny84.o
+ .debug_info    0x00001380       0x9d src/QTouch/qm_asm_tiny_mega.o
+ .debug_info    0x0000141d      0x4c2 touch.o
+ .debug_info    0x000018df       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
+ .debug_info    0x000019bd       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
+ .debug_info    0x00001a9b       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
+ .debug_info    0x00001b79       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .debug_info    0x00001c57       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
+ .debug_info    0x00001d35       0xde c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev   0x00000000      0x4e7
+.debug_abbrev   0x00000000      0x504
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0x14 i2cmaster.o
- .debug_abbrev  0x00000014      0x247 main.o
- .debug_abbrev  0x0000025b        0x1 src/QTouch/BitBangSPI_Master.o
- .debug_abbrev  0x0000025c       0x9f src/QTouch/init_mcu_attiny84.o
- .debug_abbrev  0x000002fb        0x1 src/QTouch/eeprom_access.o
- .debug_abbrev  0x000002fc        0x1 src/QTouch/QDebug.o
- .debug_abbrev  0x000002fd        0x1 src/QTouch/QDebugTransport.o
- .debug_abbrev  0x000002fe       0x14 src/QTouch/qm_asm_tiny_mega.o
- .debug_abbrev  0x00000312      0x15d touch.o
- .debug_abbrev  0x0000046f       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
- .debug_abbrev  0x00000483       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
- .debug_abbrev  0x00000497       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
- .debug_abbrev  0x000004ab       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
- .debug_abbrev  0x000004bf       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
- .debug_abbrev  0x000004d3       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x00000014      0x264 main.o
+ .debug_abbrev  0x00000278        0x1 src/QTouch/BitBangSPI_Master.o
+ .debug_abbrev  0x00000279       0x9f src/QTouch/init_mcu_attiny84.o
+ .debug_abbrev  0x00000318        0x1 src/QTouch/eeprom_access.o
+ .debug_abbrev  0x00000319        0x1 src/QTouch/QDebug.o
+ .debug_abbrev  0x0000031a        0x1 src/QTouch/QDebugTransport.o
+ .debug_abbrev  0x0000031b       0x14 src/QTouch/qm_asm_tiny_mega.o
+ .debug_abbrev  0x0000032f      0x15d touch.o
+ .debug_abbrev  0x0000048c       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
+ .debug_abbrev  0x000004a0       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
+ .debug_abbrev  0x000004b4       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
+ .debug_abbrev  0x000004c8       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .debug_abbrev  0x000004dc       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x000004f0       0x14 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
 
-.debug_line     0x00000000      0x969
+.debug_line     0x00000000      0xd55
  *(.debug_line)
  .debug_line    0x00000000       0xb2 i2cmaster.o
- .debug_line    0x000000b2      0x26f main.o
- .debug_line    0x00000321        0x0 src/QTouch/BitBangSPI_Master.o
- .debug_line    0x00000321       0xf8 src/QTouch/init_mcu_attiny84.o
- .debug_line    0x00000419        0x0 src/QTouch/eeprom_access.o
- .debug_line    0x00000419        0x0 src/QTouch/QDebug.o
- .debug_line    0x00000419        0x0 src/QTouch/QDebugTransport.o
- .debug_line    0x00000419       0xb1 src/QTouch/qm_asm_tiny_mega.o
- .debug_line    0x000004ca      0x11d touch.o
- .debug_line    0x000005e7       0x98 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
- .debug_line    0x0000067f       0xa2 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
- .debug_line    0x00000721       0xa1 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
- .debug_line    0x000007c2       0x88 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
- .debug_line    0x0000084a       0x91 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
- .debug_line    0x000008db       0x8e c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
+ .debug_line    0x000000b2      0x65b main.o
+ .debug_line    0x0000070d        0x0 src/QTouch/BitBangSPI_Master.o
+ .debug_line    0x0000070d       0xf8 src/QTouch/init_mcu_attiny84.o
+ .debug_line    0x00000805        0x0 src/QTouch/eeprom_access.o
+ .debug_line    0x00000805        0x0 src/QTouch/QDebug.o
+ .debug_line    0x00000805        0x0 src/QTouch/QDebugTransport.o
+ .debug_line    0x00000805       0xb1 src/QTouch/qm_asm_tiny_mega.o
+ .debug_line    0x000008b6      0x11d touch.o
+ .debug_line    0x000009d3       0x98 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_mulhi3.o)
+ .debug_line    0x00000a6b       0xa2 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_prologue.o)
+ .debug_line    0x00000b0d       0xa1 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_epilogue.o)
+ .debug_line    0x00000bae       0x88 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_exit.o)
+ .debug_line    0x00000c36       0x91 c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_copy_data.o)
+ .debug_line    0x00000cc7       0x8e c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr25\libgcc.a(_clear_bss.o)
 
-.debug_frame    0x00000000      0x198
+.debug_frame    0x00000000      0x1bc
  *(.debug_frame)
- .debug_frame   0x00000000       0xf0 main.o
- .debug_frame   0x000000f0       0x74 src/QTouch/init_mcu_attiny84.o
- .debug_frame   0x00000164       0x34 touch.o
+ .debug_frame   0x00000000      0x114 main.o
+ .debug_frame   0x00000114       0x74 src/QTouch/init_mcu_attiny84.o
+ .debug_frame   0x00000188       0x34 touch.o
 
 .debug_str      0x00000000      0x610
  *(.debug_str)
@@ -699,10 +699,10 @@ LOAD c:/program files/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.0.65/av
  .debug_str     0x0000024b      0x3c5 touch.o
                                 0x552 (size before relaxing)
 
-.debug_loc      0x00000000      0x3b4
+.debug_loc      0x00000000     0x12e5
  *(.debug_loc)
- .debug_loc     0x00000000      0x339 main.o
- .debug_loc     0x00000339       0x7b src/QTouch/init_mcu_attiny84.o
+ .debug_loc     0x00000000     0x126a main.o
+ .debug_loc     0x0000126a       0x7b src/QTouch/init_mcu_attiny84.o
 
 .debug_macinfo
  *(.debug_macinfo)
