@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 8/27/2012 9:40:04 PM
+EESchema Schematic File Version 2  date 9/9/2012 6:02:59 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Chameleon Drink Coasters"
-Date "28 aug 2012"
+Date "9 sep 2012"
 Rev "1.0"
 Comp "Projects and Stuff LLC"
 Comment1 ""
@@ -593,7 +593,7 @@ L R R3
 U 1 1 503C208E
 P 950 5550
 F 0 "R3" V 1050 5550 50  0000 C CNN
-F 1 "1.5k" V 950 5550 50  0000 C CNN
+F 1 "100" V 950 5550 50  0000 C CNN
 	1    950  5550
 	0    1    1    0   
 $EndComp
@@ -602,7 +602,7 @@ L R R22
 U 1 1 503C2023
 P 1000 5450
 F 0 "R22" V 1080 5450 50  0000 C CNN
-F 1 "1.5k" V 1000 5450 50  0000 C CNN
+F 1 "100" V 1000 5450 50  0000 C CNN
 	1    1000 5450
 	0    -1   -1   0   
 $EndComp
@@ -949,7 +949,7 @@ L R R1
 U 1 1 4FA82E61
 P 1300 5050
 F 0 "R1" V 1380 5050 50  0000 C CNN
-F 1 "1.5k" V 1300 5050 50  0000 C CNN
+F 1 "1.8k" V 1300 5050 50  0000 C CNN
 	1    1300 5050
 	-1   0    0    1   
 $EndComp
@@ -958,7 +958,7 @@ L R R2
 U 1 1 4FA82E5A
 P 1450 5050
 F 0 "R2" V 1530 5050 50  0000 C CNN
-F 1 "1.5k" V 1450 5050 50  0000 C CNN
+F 1 "1.8k" V 1450 5050 50  0000 C CNN
 	1    1450 5050
 	-1   0    0    1   
 $EndComp
@@ -1784,7 +1784,7 @@ DA 75 EC 6A CB FA 00 00 98 83 56 94 E6 19 38 EA C1 56 AE 6A 0F 00 60 29 48 F0 66
 7B B9 BD 6B 01 00 F0 3F 68 45 11 2B 2C 7C CC 8C 27 DE E4 CF 25 0F 00 60 2F 98 D9 8A EB 5A 7C 74 
 6E 56 52 49 51 4E 59 71 7E 65 C5 4D 0F AF 00 BF F6 21 9D BA 45 88 9C 00 16 00 C0 66 90 E0 00 00 
 AC 42 3B 38 00 00 AB 90 E0 00 00 AC 42 82 03 00 B0 EA FF 00 E3 76 B5 A7 81 B6 BC 08 00 00 00 00 
-49 45 4E 44 AE 42 60 82 4E $EndBitmap
+49 45 4E 44 AE 42 60 82 38 $EndBitmap
 EndData
 $EndBitmap
 Text Notes 3700 750  0    60   ~ 0
