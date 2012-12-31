@@ -1,14 +1,14 @@
 Drill report for C:\Users\Jack\KiCAD Projects\Chameleon\Chameleon\Hardware\Chameleon.brd
-Created on 5/16/2012 8:33:37 PM
+Created on 12/30/2012 11:34:19 PM
 Selected Drill Unit: Imperial (")
 
 Drill report for through holes :
 T1  0.020"  0.50mm  (2 holes)
-T2  0.025"  0.64mm  (40 holes)
-T3  0.040"  1.02mm  (6 holes)
-T4  0.089"  2.25mm  (2 holes)
+T2  0.025"  0.64mm  (42 holes)
+T3  0.039"  1.00mm  (2 holes)
+T4  0.040"  1.02mm  (6 holes)
 
-total plated holes count 50
+total plated holes count 52
 
 
 Drill report for Not Plated through holes :
