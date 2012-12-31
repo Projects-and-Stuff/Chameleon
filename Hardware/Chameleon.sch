@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/9/2012 6:02:59 PM
+EESchema Schematic File Version 2  date 12/30/2012 6:35:34 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Chameleon Drink Coasters"
-Date "9 sep 2012"
+Date "30 dec 2012"
 Rev "1.0"
 Comp "Projects and Stuff LLC"
 Comment1 ""
@@ -45,6 +45,42 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	4700 6850 3100 6850
+Wire Wire Line
+	5600 6750 3800 6750
+Wire Wire Line
+	3800 6750 3800 5750
+Wire Wire Line
+	3800 5750 3000 5750
+Wire Wire Line
+	3000 5550 4000 5550
+Wire Wire Line
+	4000 5550 4000 6550
+Wire Wire Line
+	4000 6550 4700 6550
+Wire Wire Line
+	5150 6050 3550 6050
+Wire Wire Line
+	3550 6050 3550 6150
+Wire Wire Line
+	3550 6150 3200 6150
+Wire Wire Line
+	3200 6150 3200 6250
+Wire Wire Line
+	5600 6450 3350 6450
+Wire Wire Line
+	3350 6450 3350 6050
+Wire Wire Line
+	3350 6050 3000 6050
+Wire Wire Line
+	3000 5850 3450 5850
+Wire Wire Line
+	3450 5850 3450 6250
+Wire Wire Line
+	3450 6250 4700 6250
+Wire Wire Line
+	3000 6150 3100 6150
 Wire Wire Line
 	600  5550 700  5550
 Wire Wire Line
@@ -167,12 +203,6 @@ Connection ~ 1700 6050
 Wire Wire Line
 	1700 6250 1750 6250
 Wire Wire Line
-	3000 6450 3100 6450
-Wire Wire Line
-	3100 6450 3100 6850
-Wire Wire Line
-	3100 6850 4700 6850
-Wire Wire Line
 	10300 3600 10300 4500
 Wire Wire Line
 	5650 6650 9700 6650
@@ -203,37 +233,11 @@ Wire Wire Line
 Wire Wire Line
 	6300 5450 5650 5450
 Wire Wire Line
-	3000 6050 3500 6050
-Wire Wire Line
-	3000 5850 3700 5850
-Wire Wire Line
-	3000 5650 3900 5650
-Wire Wire Line
 	3000 5450 4100 5450
 Wire Wire Line
 	3000 5250 4300 5250
 Wire Wire Line
 	3000 5050 4500 5050
-Wire Wire Line
-	3000 6150 3400 6150
-Wire Wire Line
-	3000 6350 3200 6350
-Wire Wire Line
-	3300 6650 3300 6250
-Wire Wire Line
-	3300 6650 5150 6650
-Wire Wire Line
-	3500 6050 3500 6450
-Wire Wire Line
-	3500 6450 5600 6450
-Wire Wire Line
-	3700 5850 3700 6250
-Wire Wire Line
-	3700 6250 4700 6250
-Wire Wire Line
-	5150 6050 3900 6050
-Wire Wire Line
-	3900 6050 3900 5650
 Wire Wire Line
 	5600 5850 4100 5850
 Wire Wire Line
@@ -384,39 +388,11 @@ Wire Wire Line
 Wire Wire Line
 	4200 5750 5150 5750
 Wire Wire Line
-	4000 5950 4000 5550
-Wire Wire Line
-	4000 5950 4700 5950
-Wire Wire Line
-	3800 6150 3800 5750
-Wire Wire Line
-	3800 6150 5600 6150
-Wire Wire Line
-	5150 6350 3600 6350
-Wire Wire Line
-	3600 6350 3600 5950
-Wire Wire Line
-	4700 6550 3400 6550
-Wire Wire Line
-	3400 6550 3400 6150
-Wire Wire Line
-	5600 6750 3200 6750
-Wire Wire Line
-	3200 6750 3200 6350
-Wire Wire Line
-	3300 6250 3000 6250
-Wire Wire Line
 	4600 4950 3000 4950
 Wire Wire Line
 	4400 5150 3000 5150
 Wire Wire Line
 	4200 5350 3000 5350
-Wire Wire Line
-	4000 5550 3000 5550
-Wire Wire Line
-	3800 5750 3000 5750
-Wire Wire Line
-	3600 5950 3000 5950
 Wire Wire Line
 	6150 5350 5200 5350
 Wire Wire Line
@@ -584,6 +560,42 @@ Wire Wire Line
 Connection ~ 1300 5550
 Wire Wire Line
 	1200 5550 1750 5550
+Wire Wire Line
+	3200 6250 3000 6250
+Wire Wire Line
+	3000 6350 3300 6350
+Wire Wire Line
+	3000 5950 3400 5950
+Wire Wire Line
+	3400 5950 3400 6350
+Wire Wire Line
+	3400 6350 5150 6350
+Wire Wire Line
+	4700 5950 3500 5950
+Wire Wire Line
+	3500 5950 3500 6100
+Wire Wire Line
+	3500 6100 3100 6100
+Wire Wire Line
+	3100 6100 3100 6150
+Wire Wire Line
+	3300 6350 3300 6200
+Wire Wire Line
+	3300 6200 3600 6200
+Wire Wire Line
+	3600 6200 3600 6150
+Wire Wire Line
+	3600 6150 5600 6150
+Wire Wire Line
+	5150 6650 3900 6650
+Wire Wire Line
+	3900 6650 3900 5650
+Wire Wire Line
+	3900 5650 3000 5650
+Wire Wire Line
+	3100 6850 3100 6450
+Wire Wire Line
+	3100 6450 3000 6450
 Text Label 600  5550 1    60   ~ 0
 MOSI
 Text Label 700  5450 1    60   ~ 0
@@ -1784,7 +1796,7 @@ DA 75 EC 6A CB FA 00 00 98 83 56 94 E6 19 38 EA C1 56 AE 6A 0F 00 60 29 48 F0 66
 7B B9 BD 6B 01 00 F0 3F 68 45 11 2B 2C 7C CC 8C 27 DE E4 CF 25 0F 00 60 2F 98 D9 8A EB 5A 7C 74 
 6E 56 52 49 51 4E 59 71 7E 65 C5 4D 0F AF 00 BF F6 21 9D BA 45 88 9C 00 16 00 C0 66 90 E0 00 00 
 AC 42 3B 38 00 00 AB 90 E0 00 00 AC 42 82 03 00 B0 EA FF 00 E3 76 B5 A7 81 B6 BC 08 00 00 00 00 
-49 45 4E 44 AE 42 60 82 38 $EndBitmap
+49 45 4E 44 AE 42 60 82 89 $EndBitmap
 EndData
 $EndBitmap
 Text Notes 3700 750  0    60   ~ 0
