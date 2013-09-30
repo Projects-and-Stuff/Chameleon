@@ -38,7 +38,7 @@ encoding utf-8
 Sheet 1 1
 Title "Chameleon Drink Coasters"
 Date "30 sep 2013"
-Rev "1.0"
+Rev "2.0"
 Comp "Projects and Stuff LLC"
 Comment1 ""
 Comment2 ""
@@ -256,7 +256,7 @@ F 3 "" H 14150 1850 60  0001 C CNN
 $EndComp
 Text Label 8150 2700 0    60   ~ 0
 AIN0
-Text Notes 6500 1400 0    60   ~ 0
+Text Notes 6350 1400 0    60   ~ 0
 PDI Header
 $Comp
 L TST TP1
@@ -383,12 +383,12 @@ $EndComp
 $Comp
 L CONN_3X2 P1
 U 1 1 4FA823D1
-P 7200 1700
-F 0 "P1" H 7200 1950 50  0000 C CNN
-F 1 "PDI" V 7200 1750 40  0000 C CNN
-F 2 "" H 7200 1700 60  0001 C CNN
-F 3 "" H 7200 1700 60  0001 C CNN
-	1    7200 1700
+P 7050 1700
+F 0 "P1" H 7050 1950 50  0000 C CNN
+F 1 "PDI" V 7050 1750 40  0000 C CNN
+F 2 "" H 7050 1700 60  0001 C CNN
+F 3 "" H 7050 1700 60  0001 C CNN
+	1    7050 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -929,7 +929,7 @@ DA 75 EC 6A CB FA 00 00 98 83 56 94 E6 19 38 EA C1 56 AE 6A 0F 00 60 29 48 F0 66
 7B B9 BD 6B 01 00 F0 3F 68 45 11 2B 2C 7C CC 8C 27 DE E4 CF 25 0F 00 60 2F 98 D9 8A EB 5A 7C 74 
 6E 56 52 49 51 4E 59 71 7E 65 C5 4D 0F AF 00 BF F6 21 9D BA 45 88 9C 00 16 00 C0 66 90 E0 00 00 
 AC 42 3B 38 00 00 AB 90 E0 00 00 AC 42 82 03 00 B0 EA FF 00 E3 76 B5 A7 81 B6 BC 08 00 00 00 00 
-49 45 4E 44 AE 42 60 82 E6 $EndBitmap
+49 45 4E 44 AE 42 60 82 C6 $EndBitmap
 EndData
 $EndBitmap
 Text Notes 8000 1400 0    60   ~ 0
@@ -1187,7 +1187,7 @@ Text Label 11600 2400 0    60   ~ 0
 D-
 Text Notes 10900 2900 0    60   ~ 0
 Part should be specified\n(ZX62WRD-B-5PC). Water\nresistant USB Micro. Also,\nUSB Shield should be properly\nterminated.
-Text Notes 6550 1950 0    60   ~ 0
+Text Notes 6400 1950 0    60   ~ 0
 Update with PDI Header pins
 Text Notes 9000 6650 0    60   ~ 0
 Import smaller RGB LED\nfrom Pong.0
@@ -1259,11 +1259,11 @@ Wire Wire Line
 Wire Wire Line
 	10150 2250 10350 2250
 Wire Wire Line
-	7600 1650 7650 1650
+	7450 1650 7500 1650
 Wire Wire Line
-	6800 1550 6750 1550
+	6650 1550 6600 1550
 Wire Wire Line
-	6800 1750 6750 1750
+	6650 1750 6600 1750
 Wire Wire Line
 	14450 5550 14450 6450
 Wire Wire Line
@@ -1414,11 +1414,11 @@ Wire Wire Line
 Wire Wire Line
 	14450 6850 14450 8800
 Wire Wire Line
-	6800 1650 6750 1650
+	6650 1650 6600 1650
 Wire Wire Line
-	7600 1550 7650 1550
+	7450 1550 7500 1550
 Wire Wire Line
-	7600 1750 7650 1750
+	7450 1750 7500 1750
 Wire Notes Line
 	10750 1300 10750 3400
 Wire Wire Line
@@ -1558,7 +1558,7 @@ Wire Wire Line
 Wire Wire Line
 	11550 2500 11600 2500
 Wire Notes Line
-	6450 2000 7950 2000
+	6150 2000 7650 2000
 Wire Wire Line
 	9650 2250 9650 2200
 Wire Wire Line
@@ -1570,7 +1570,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 2100 9750 2200
 Wire Notes Line
-	6450 1300 6450 2000
+	6150 1300 6150 2000
 Connection ~ 15150 2200
 $Comp
 L R R?
@@ -1935,4 +1935,73 @@ Text Label 7850 8750 2    60   ~ 0
 XERR
 Text Label 850  3300 0    60   ~ 0
 XERR
+Text Label 6600 1550 2    60   ~ 0
+PDI_DATA
+Text Label 6600 1750 2    60   ~ 0
+PDI_CLK
+Text Label 7500 1550 0    60   ~ 0
+VCC
+$Comp
+L GND #PWR?
+U 1 1 5249BE44
+P 7500 1800
+F 0 "#PWR?" H 7500 1800 30  0001 C CNN
+F 1 "GND" H 7500 1730 30  0001 C CNN
+F 2 "" H 7500 1800 60  0000 C CNN
+F 3 "" H 7500 1800 60  0000 C CNN
+	1    7500 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1750 7500 1800
+NoConn ~ 7500 1650
+NoConn ~ 6600 1650
+$Comp
+L R R?
+U 1 1 5249BF5B
+P 7300 2600
+F 0 "R?" V 7380 2600 40  0000 C CNN
+F 1 "10k" V 7307 2601 40  0000 C CNN
+F 2 "~" V 7230 2600 30  0000 C CNN
+F 3 "~" H 7300 2600 30  0000 C CNN
+	1    7300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5249BF8D
+P 7300 3250
+F 0 "SW?" H 7450 3360 50  0000 C CNN
+F 1 "RESET" H 7300 3170 50  0000 C CNN
+F 2 "~" H 7300 3250 60  0000 C CNN
+F 3 "~" H 7300 3250 60  0000 C CNN
+	1    7300 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7300 2850 7300 2950
+Wire Wire Line
+	7300 2350 7300 2300
+Text Label 7300 2300 2    60   ~ 0
+VCC
+Wire Wire Line
+	7300 2900 7250 2900
+Connection ~ 7300 2900
+Text Label 7250 2900 2    60   ~ 0
+PDI_CLK
+$Comp
+L GND #PWR?
+U 1 1 5249C2C6
+P 7300 3600
+F 0 "#PWR?" H 7300 3600 30  0001 C CNN
+F 1 "GND" H 7300 3530 30  0001 C CNN
+F 2 "" H 7300 3600 60  0000 C CNN
+F 3 "" H 7300 3600 60  0000 C CNN
+	1    7300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3550 7300 3600
+Text Notes 6950 2150 0    60   ~ 0
+Reset
 $EndSCHEMATC
