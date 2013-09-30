@@ -1835,32 +1835,32 @@ Text Label 1800 3750 2    60   ~ 0
 P2_EN
 Text Label 1800 3850 2    60   ~ 0
 OEN
-Text Label 6250 9700 2    60   ~ 0
+Text Label 7000 9500 2    60   ~ 0
 OEN
 $Comp
 L R R?
 U 1 1 524A21F9
-P 6300 8450
-F 0 "R?" V 6380 8450 40  0000 C CNN
-F 1 "10k" V 6307 8451 40  0000 C CNN
-F 2 "~" V 6230 8450 30  0000 C CNN
-F 3 "~" H 6300 8450 30  0000 C CNN
-	1    6300 8450
+P 7050 8250
+F 0 "R?" V 7130 8250 40  0000 C CNN
+F 1 "10k" V 7057 8251 40  0000 C CNN
+F 2 "~" V 6980 8250 30  0000 C CNN
+F 3 "~" H 7050 8250 30  0000 C CNN
+	1    7050 8250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 8700 6300 8750
+	7050 8500 7050 8550
 Wire Wire Line
-	6300 8200 6300 8150
-Text Label 6300 8150 2    60   ~ 0
+	7050 8000 7050 7950
+Text Label 7050 7950 2    60   ~ 0
 VCC
-Text Label 6250 8750 2    60   ~ 0
+Text Label 7000 8550 2    60   ~ 0
 PD
 Text Label 7850 8250 2    60   ~ 0
 GSCLK
 Wire Wire Line
-	6300 9100 6300 9150
-Text Notes 5200 8450 0    60   ~ 0
+	7050 8900 7050 8950
+Text Notes 5950 8250 0    60   ~ 0
 Pulls high to initially\nturn AS1121 off
 Wire Wire Line
 	12150 5500 12150 6100
@@ -1875,52 +1875,52 @@ Wire Wire Line
 $Comp
 L R R?
 U 1 1 524A3942
-P 6300 9400
-F 0 "R?" V 6380 9400 40  0000 C CNN
-F 1 "10k" V 6307 9401 40  0000 C CNN
-F 2 "~" V 6230 9400 30  0000 C CNN
-F 3 "~" H 6300 9400 30  0000 C CNN
-	1    6300 9400
+P 7050 9200
+F 0 "R?" V 7130 9200 40  0000 C CNN
+F 1 "10k" V 7057 9201 40  0000 C CNN
+F 2 "~" V 6980 9200 30  0000 C CNN
+F 3 "~" H 7050 9200 30  0000 C CNN
+	1    7050 9200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 9650 6300 9700
+	7050 9450 7050 9500
 Wire Wire Line
-	6300 9700 6250 9700
+	7050 9500 7000 9500
 Wire Wire Line
-	6300 8750 6250 8750
-Text Label 6300 9100 2    60   ~ 0
+	7050 8550 7000 8550
+Text Label 7050 8900 2    60   ~ 0
 VCC
-Text Notes 5200 9400 0    60   ~ 0
+Text Notes 5950 9200 0    60   ~ 0
 Pulls high to initially\nturn outputs off
 $Comp
 L R R?
 U 1 1 524A3CBA
-P 6300 7500
-F 0 "R?" V 6380 7500 40  0000 C CNN
-F 1 "10k" V 6307 7501 40  0000 C CNN
-F 2 "~" V 6230 7500 30  0000 C CNN
-F 3 "~" H 6300 7500 30  0000 C CNN
-	1    6300 7500
+P 7050 7300
+F 0 "R?" V 7130 7300 40  0000 C CNN
+F 1 "10k" V 7057 7301 40  0000 C CNN
+F 2 "~" V 6980 7300 30  0000 C CNN
+F 3 "~" H 7050 7300 30  0000 C CNN
+	1    7050 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 7750 6300 7800
+	7050 7550 7050 7600
 Wire Wire Line
-	6300 7250 6300 7200
-Text Label 6300 7200 2    60   ~ 0
+	7050 7050 7050 7000
+Text Label 7050 7000 2    60   ~ 0
 MODE
-Text Notes 5200 7500 0    60   ~ 0
+Text Notes 5950 7300 0    60   ~ 0
 Pulls low to initially\nset to Grayscale mode
 $Comp
 L GND #PWR?
 U 1 1 524A3CC8
-P 6300 7800
-F 0 "#PWR?" H 6300 7800 30  0001 C CNN
-F 1 "GND" H 6300 7730 30  0001 C CNN
-F 2 "" H 6300 7800 60  0000 C CNN
-F 3 "" H 6300 7800 60  0000 C CNN
-	1    6300 7800
+P 7050 7600
+F 0 "#PWR?" H 7050 7600 30  0001 C CNN
+F 1 "GND" H 7050 7530 30  0001 C CNN
+F 2 "" H 7050 7600 60  0000 C CNN
+F 3 "" H 7050 7600 60  0000 C CNN
+	1    7050 7600
 	1    0    0    -1  
 $EndComp
 Text Label 7850 8550 2    60   ~ 0
@@ -1931,4 +1931,8 @@ Text Label 850  3100 0    60   ~ 0
 PD
 Text Label 850  3200 0    60   ~ 0
 GSCLK
+Text Label 7850 8750 2    60   ~ 0
+XERR
+Text Label 850  3300 0    60   ~ 0
+XERR
 $EndSCHEMATC
