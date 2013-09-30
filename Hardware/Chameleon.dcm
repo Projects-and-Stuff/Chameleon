@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  Date: 8/13/2012 2:43:27 PM
+EESchema-DOCLIB  Version 2.0  Date: 9/30/2013 9:58:03 PM
 #
 $CMP PCA9635
 D 16-bit Fm+ I2C-bus LED driver
@@ -6,6 +6,24 @@ $ENDCMP
 #
 $CMP PCA9685
 D 16-channel, 12-bit PWM Fm+ I2C-bus LED controller
+$ENDCMP
+#
+$CMP TLV71210DBV
+D TLV71210DBV, 300 mA Low Dropout Voltage Regulator, Fixed Output 1.0V, SOT-23-5
+K 300mA LDO Regulator Fixed Positive
+F http://www.ti.com/lit/ds/symlink/tlv71209.pdf
+$ENDCMP
+#
+$CMP TLV71211DBV
+D TLV71211DBV, 300 mA Low Dropout Voltage Regulator, Fixed Output 1.1V, SOT-23-5
+K 300mA LDO Regulator Fixed Positive
+F http://www.ti.com/lit/ds/symlink/tlv71209.pdf
+$ENDCMP
+#
+$CMP TLV71333PDBVR
+D TLV71209DBV, 300 mA Low Dropout Voltage Regulator, Fixed Output 0.9V, SOT-23-5
+K 300mA LDO Regulator Fixed Positive
+F http://www.ti.com/lit/ds/symlink/tlv71209.pdf
 $ENDCMP
 #
 #End Doc Library
