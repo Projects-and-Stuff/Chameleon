@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  Date: 9/30/2013 9:23:54 PM
+EESchema-DOCLIB  Version 2.0  Date: 10/1/2013 9:20:12 PM
 #
 $CMP PCA9635
 D 16-bit Fm+ I2C-bus LED driver
@@ -6,6 +6,16 @@ $ENDCMP
 #
 $CMP PCA9685
 D 16-channel, 12-bit PWM Fm+ I2C-bus LED controller
+$ENDCMP
+#
+$CMP SPST
+D Interrupteur simple
+K switch
+$ENDCMP
+#
+$CMP SPSTSmall
+D Interrupteur simple
+K switch
 $ENDCMP
 #
 $CMP TLV71210DBV
