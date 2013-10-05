@@ -1,4 +1,4 @@
-update=10/4/2013 9:59:43 PM
+update=10/5/2013 10:06:36 PM
 version=1
 last_client=eeschema
 [general]
@@ -77,3 +77,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+LibName31=Chameleon
