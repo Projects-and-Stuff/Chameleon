@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 10/6/2013 8:05:02 PM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 10/20/2013 6:58:20 PM
 
 BeginCmp
 TimeStamp = /524B34E9;
@@ -277,7 +277,7 @@ BeginCmp
 TimeStamp = /524AFCFA;
 Reference = J1;
 ValeurCmp = USB-MICRO-B;
-IdModule  = ;
+IdModule  = ZX62WRD-B-5PC;
 EndCmp
 
 BeginCmp
@@ -550,7 +550,7 @@ BeginCmp
 TimeStamp = /52484D80;
 Reference = U1;
 ValeurCmp = ATXMEGA16A4U-A;
-IdModule  = TQFP44;
+IdModule  = VQFP44;
 EndCmp
 
 BeginCmp
