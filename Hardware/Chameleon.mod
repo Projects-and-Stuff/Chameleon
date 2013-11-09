@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  11/8/2013 6:35:55 PM
+PCBNEW-LibModule-V1  11/9/2013 12:50:02 PM
 # encoding utf-8
 Units mm
 $INDEX
@@ -718,7 +718,7 @@ Po 0 0
 $EndPAD
 $EndMODULE TestPoint_1-pin
 $MODULE VQFN44
-Po 0 0 0 15 527CEFC2 00000000 ~~
+Po 0 0 0 15 527DF028 00000000 ~~
 Li VQFN44
 Sc 0
 AR 
@@ -730,7 +730,7 @@ DS 3.5 -3.5 3.5 3.5 0.1 21
 DS 3.5 3.5 -3.5 3.5 0.1 21
 DS -3.5 3.5 -3.5 -3.5 0.1 21
 $PAD
-Sh "45" R 5.2 5.2 0 0 0
+Sh "" R 5.2 5.2 0 0 0
 Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
@@ -1043,6 +1043,48 @@ Dr 0 0 0
 At SMD N 00888000
 Ne 0 ""
 Po 2.5 -3.5
+$EndPAD
+$PAD
+Sh "" C 1.59 1.59 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "" C 1.59 1.59 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.524 -1.524
+$EndPAD
+$PAD
+Sh "" C 1.59 1.59 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.524 -1.524
+$EndPAD
+$PAD
+Sh "" C 1.59 1.59 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.524 1.524
+$EndPAD
+$PAD
+Sh "" C 1.59 1.59 0 0 0
+Dr 1 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.524 1.524
+$EndPAD
+$PAD
+Sh "45" R 5.2 5.2 0 0 0
+Dr 0 0 0
+At SMD N 00880001
+Ne 0 ""
+Po 0 0
 $EndPAD
 $EndMODULE VQFN44
 $MODULE ZX62-B-5PA
