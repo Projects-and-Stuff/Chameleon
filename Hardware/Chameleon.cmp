@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 11/9/2013 1:08:10 PM
+Cmp-Mod V01 Created by PcbNew date = 11/10/2013 8:48:38 PM
 
 BeginCmp
 TimeStamp = /524B34E9;
@@ -11,7 +11,7 @@ BeginCmp
 TimeStamp = /4FA6C819;
 Reference = BT1;
 ValeurCmp = 3.7V 500mAh;
-IdModule  = ;
+IdModule  = Battery;
 EndCmp
 
 BeginCmp
@@ -218,10 +218,10 @@ IdModule  = LED-0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /50294AD3;
+TimeStamp = /527F13AA;
 Reference = D7;
 ValeurCmp = ZLLS410TA;
-IdModule  = ;
+IdModule  = SOD323;
 EndCmp
 
 BeginCmp
@@ -260,10 +260,10 @@ IdModule  = LED-0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /52506708;
+TimeStamp = /527F157D;
 Reference = D13;
-ValeurCmp = DIODE;
-IdModule  = ;
+ValeurCmp = ZLLS410TA;
+IdModule  = SOD323;
 EndCmp
 
 BeginCmp
@@ -271,6 +271,13 @@ TimeStamp = /52484E02;
 Reference = F1;
 ValeurCmp = PTC FUSE;
 IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /527DF29E;
+Reference = IC1;
+ValeurCmp = ATXMEGA16A4U-A-MODIFIED;
+IdModule  = VQFN44-MODIFIED;
 EndCmp
 
 BeginCmp
@@ -519,38 +526,24 @@ IdModule  = SM0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FA6C954;
-Reference = S1;
-ValeurCmp = TL3315NF160Q;
-IdModule  = TL3315NF160Q;
-EndCmp
-
-BeginCmp
 TimeStamp = /5249BF8D;
 Reference = SW1;
-ValeurCmp = RESET;
-IdModule  = ;
+ValeurCmp = TL1105JAF160Q;
+IdModule  = TL1105JAF160Q;
 EndCmp
 
 BeginCmp
 TimeStamp = /525082D9;
 Reference = SW2;
-ValeurCmp = ON_OFF;
-IdModule  = ;
+ValeurCmp = TL1105SPF250Q;
+IdModule  = TL1105SPF250Q;
 EndCmp
 
 BeginCmp
-TimeStamp = /4FAEFE1B;
-Reference = TP1;
-ValeurCmp = TST;
-IdModule  = TestPoint_1-pin;
-EndCmp
-
-BeginCmp
-TimeStamp = /52484D80;
-Reference = U1;
-ValeurCmp = ATXMEGA16A4U-A;
-IdModule  = VQFN44;
+TimeStamp = /4FA6C954;
+Reference = SW3;
+ValeurCmp = TL3315NF160Q;
+IdModule  = TL3315NF160Q;
 EndCmp
 
 BeginCmp
@@ -578,7 +571,7 @@ BeginCmp
 TimeStamp = /52505C6C;
 Reference = U5;
 ValeurCmp = SI3588DV;
-IdModule  = ;
+IdModule  = TSOP-6-Special;
 EndCmp
 
 BeginCmp
